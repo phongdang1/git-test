@@ -1,0 +1,41 @@
+
+address{
+    font-size:80%;
+    margin:0px;
+   
+}
+.jumbotron {
+    padding:70px 30px 70px 30px;
+    margin:0px auto;
+    background: #9575CD ;
+    color:floralwhite;
+}
+footer{
+        padding:70px 30px 70px 30px;
+    margin:0px auto;
+    background: #9575CD ;
+    color:floralwhite;
+}
+
+.list-unstyled li a {
+    color: white;
+  }
+  .linked a {
+    color: white;
+  }
+
+  .container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+body{
+  z-index:0;
+}
+
+.navbar-dark {
+   background-color: #512DA8 !important;
+}
+
