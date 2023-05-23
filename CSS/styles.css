@@ -38,4 +38,16 @@ body{
 .navbar-dark {
    background-color: #512DA8 !important;
 }
-
+.card-header {
+  background-color: #FDC02F;
+  color: white;
+}
+.badge-secondary{
+  border-radius: 15px;
+}
+@media screen and (max-width: 767px) {
+    .a {
+      display: flex;
+    }
+    
+}
