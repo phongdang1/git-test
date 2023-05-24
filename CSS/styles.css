@@ -38,13 +38,7 @@ body{
 .navbar-dark {
    background-color: #512DA8 !important;
 }
-.card-header {
-  background-color: #FDC02F;
-  color: white;
-}
-.badge-secondary{
-  border-radius: 15px;
-}
+
 @media screen and (max-width: 767px) {
     .a {
       display: flex;
@@ -52,6 +46,7 @@ body{
     
 }
 .tab-content {
+  border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
