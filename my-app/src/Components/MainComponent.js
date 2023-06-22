@@ -8,6 +8,7 @@ import Home from './HomeComponent';
 import { COMMENTS } from '../shared/comments';
 import { PROMOTIONS } from '../shared/promotions';
 import { LEADERS } from '../shared/leaders';
+import Contact from './ContactComponent';
 
 import { Switch, Route, Redirect } from 'react-router-dom';
 class Main extends Component {
@@ -37,7 +38,19 @@ class Main extends Component {
               leader={this.state.leaders.filter((leader) => leader.featured)[0]}
           />
       );
+
     }
+     const DishWithId = ({match}) => {
+      return(
+          <DishDetail dish={this.state.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]} 
+            comments={this.state.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))} />
+      );
+    };
+
+
+
+              
+
     return (
 
       <div>
@@ -45,6 +58,8 @@ class Main extends Component {
         <Switch>
               <Route path='/home' component={HomePage} />
               <Route exact path='/menu' component={() => <Menu dishes={this.state.dishes} />} />
+              <Route exact path='/contactus' component={Contact} />{'}'} /&gt;
+              <Route path='/menu/:dishId' component={DishWithId} />
               <Redirect to="/home" />
           </Switch>
         <DishDetail dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} /><br/><br/><br/><br/>
