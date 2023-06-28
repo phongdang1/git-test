@@ -8,7 +8,7 @@ import Home from './HomeComponent';
 import { COMMENTS } from '../shared/comments';
 import { PROMOTIONS } from '../shared/promotions';
 import { LEADERS } from '../shared/leaders';
-import Contact from './ContactComponent';
+import Contact from '../components/ContactComponent';
 
 import { Switch, Route, Redirect } from 'react-router-dom';
 class Main extends Component {
