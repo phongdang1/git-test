@@ -38,7 +38,7 @@ class Header extends Component {
 
   render() {
       return(
-          <div>
+          <div style={{ backgroundColor: '#9477CB', color: 'white' }}>
               <Navbar dark expand="md">
                   <div className="container">
                       <NavbarToggler onClick={this.toggleNav} />
@@ -94,7 +94,7 @@ class Header extends Component {
                     </ModalBody>
                 </Modal>
 
-                  <div className="container">
+                  <div className="container"  style={{ paddingTop: '20px', paddingBottom: '20px' }}> 
                       <div className="row row-header">
                           <div className="col-12 col-sm-6">
                               <h1>Ristorante con Fusion</h1>

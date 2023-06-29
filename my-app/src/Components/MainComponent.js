@@ -1,14 +1,15 @@
 import React, { Component } from 'react'; 
-import Menu from './MenuComponent';
-import DishDetail from './DishdetailComponent';
+import Menu from '../components/MenuComponent';
+import DishDetail from '../components/DishdetailComponent';
 import { DISHES } from '../shared/dishes';
-import Header from './HeaderComponent';
-import Footer from './FooterComponent';
-import Home from './HomeComponent';
+import Header from '../components/HeaderComponent';
+import Footer from '../components/FooterComponent';
+import Home from '../components/HomeComponent';
 import { COMMENTS } from '../shared/comments';
 import { PROMOTIONS } from '../shared/promotions';
 import { LEADERS } from '../shared/leaders';
 import Contact from '../components/ContactComponent';
+import About from '../components/AboutComponent';
 
 import { Switch, Route, Redirect } from 'react-router-dom';
 class Main extends Component {
@@ -23,11 +24,6 @@ class Main extends Component {
       leaders: LEADERS
     };
   }
-
-
-
-
-  
 
   render() {
     const HomePage = () => {
@@ -47,17 +43,13 @@ class Main extends Component {
       );
     };
 
-
-
-              
-
     return (
-
       <div>
       <Header />
         <Switch>
               <Route path='/home' component={HomePage} />
               <Route exact path='/menu' component={() => <Menu dishes={this.state.dishes} />} />
+              <Route exact path='/aboutus' component={About} />{'}'} /&gt;
               <Route exact path='/contactus' component={Contact} />{'}'} /&gt;
               <Route path='/menu/:dishId' component={DishWithId} />
               <Redirect to="/home" />

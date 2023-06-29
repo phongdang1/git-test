@@ -3,7 +3,6 @@ import { Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle} from 'reactstrap';
 
 function RenderCard({item}) {
-
     return(
         <Card>
             <CardImg src={item.image} alt={item.name} />
@@ -14,7 +13,6 @@ function RenderCard({item}) {
             </CardBody>
         </Card>
     );
-
 }
 
 function Home(props) {
@@ -22,13 +20,13 @@ function Home(props) {
         <div className="container">
             <div className="row align-items-start">
                 <div className="col-12 col-md m-1">
-                    <RenderCard item={props.dish} />
+                    <RenderCard item={props.dish}/>
                 </div>
                 <div className="col-12 col-md m-1">
-                    <RenderCard item={props.promotion} />
+                    <RenderCard item={props.promotion}/>
                 </div>
                 <div className="col-12 col-md m-1">
-                    <RenderCard item={props.leader} />
+                    <RenderCard item={props.leader}/>
                 </div>
             </div>
         </div>
