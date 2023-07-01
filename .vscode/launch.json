@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        
+
+        {
+            "type": "node",
+            "name": "vscode-jest-tests.v2",
+            "request": "launch",
+            "args": [
+                "test",
+                "--",
+                "--runInBand",
+                "--watchAll=false",
+                "--testNamePattern",
+                "${jest.testNamePattern}",
+                "--runTestsByPath",
+                "${jest.testFile}"
+            ],
+            "cwd": "c:\\Users\\phong\\OneDrive\\Documents\\node-js-w-vscode\\localhot\\Bootstrap4\\Bootstrap4\\conFusion",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "runtimeExecutable": "npm"
+        }
+    ]
+}
